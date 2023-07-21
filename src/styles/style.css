@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 * {
     font-family: 'Lexend Deca', sans-serif;
@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color:#F3F5F7;
+    background-color: #F3F5F7;
     /* height: 100vh; */
     /* display: flex;
     flex-direction: column; */
@@ -18,18 +18,49 @@ body {
 /* === HEADER === */
 
 .container {
-    background-color: black;
     display: flex;
-    justify-content: space-between;
+    gap: 41px;
+    /* dê um espaçamento de 41px entre cada filho de .container */
+    flex-direction: column;
     max-width: 900px;
-    margin: 48px 20px;
+    padding: 48px 20px;
 }
 
 .p1 {
-    font-size: 24px;
+
+    font-size: 18px;
     font-family: 'Lexend Deca', sans-serif;
     color: #FFF;
     line-height: normal;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+input {
+    border: none;
+    padding: 12px 0 11px 17px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.20);
+    font-family: 'Inter', sans-serif;
+}
+
+/* pseudo-elemento */
+input::placeholder {
+    color: #FFF;
+    opacity: 0.5;
+    font-size: 14px;
+
+}
+
+
+.containerHeader {
+    background: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
 }
 
 /* === ARTICLES SECTION === */
@@ -37,38 +68,41 @@ body {
 
 
 .conteudoPrincipal {
-    
+
     max-width: 900px;
-   padding: 50px 20px 25px;
+    padding: 50px 20px 25px;
 
 }
 
 .cabecalhoEcoracao {
-display: flex;
-justify-content: space-between;
-margin: 16px auto 27px;
+    display: flex;
+    justify-content: space-between;
+   margin-bottom: 27px;
 
 }
 
 .artigos {
-padding: 16px;
-background-color: #FFF;
-margin-bottom:25px; 
+    padding: 16.75px;
+    background-color: #FFF;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border-style: groove;
+    border: solid 0.5px;
 }
 
 
 p {
     color: #717171;
-    
+
     font-size: 14px;
     line-height: 26px;
 }
 
 
 h2 {
-    
+
     font-weight: 400;
-    color:#1A202C;
+    color: #1A202C;
     font-size: 18px;
 
 
@@ -86,50 +120,32 @@ h2 {
     */
 
     .container {
-        
-        margin: 0; /* cima, baixo, esquerda e direita */
-        margin: 0 0; /* cima e baixo, esquerda e direita */
-        margin: 0 0 0; /* 1º: cima, 2ª esquerda e direita e o 3º baixo */
-        margin: 0 0 0 0; 
+        gap: 73px;
+        padding: 41px auto 0;
+        margin: auto;
+      padding-bottom: 41px;
 
-        margin: 41px auto 0;
+
+    }
+
+    .conteudoPrincipal {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .p1 {
+
+        font-size: 24px;
     }
 
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
